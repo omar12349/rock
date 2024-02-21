@@ -61,7 +61,7 @@ buttonRock.addEventListener('click',()=>{
     } else if (playGame() == 'tie'){
         sum++
     }
-    score.innerHTML = 'human: ' + win + 'vs computer: ' +lose
+    score.innerHTML = 'human: ' + win + 'vs computer: ' +lose + '    tie rounds:'+ (sum-win-lose)
     if (sum == 5){
         if (win > lose){
             finalScore.innerHTML = 'You are the WINNNER!'
@@ -84,7 +84,7 @@ buttonPaper.addEventListener('click',()=>{
     } else if (playGame() == 'tie'){
         sum++
     }
-    score.innerHTML = 'human: ' + win + 'vs computer: ' +lose
+    score.innerHTML = 'human: ' + win + 'vs computer: ' +lose +'    tie rounds:'+ (sum-win-lose)
     if (sum == 5){
         if (win > lose){
             finalScore.innerHTML = 'You are the WINNNER!'
@@ -109,7 +109,7 @@ buttonScissors.addEventListener('click',()=>{
     } else if (playGame() == 'tie'){
         sum++
     }
-    score.innerHTML = 'human: ' + win + 'vs computer: ' +lose
+    score.innerHTML = 'human: ' + win + 'vs computer: ' + lose + '    tie rounds:'+ (sum-win-lose)
     if (sum == 5){
         if (win > lose){
             finalScore.innerHTML = 'You are the WINNNER!'
